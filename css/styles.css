@@ -1,0 +1,94 @@
+/* CSS Document */
+
+
+/**
+ * HTML Styling
+ */
+ 
+html {
+	height:100px;
+	box-sizing:border-box;
+}
+
+/**
+* FONT FACE
+*/
+@font-face {
+  font-family: 'MineCrafter-2.0';
+  src: url('fonts/minecrafter_20.eot');
+  src: url('fonts/minecrafter_20.eot?#iefix') format('embedded-opentype'),
+       url('fonts/minecrafter_20.woff') format('woff'),
+       url('fonts/minecrafter_20.ttf') format('truetype'),
+       url('fonts/minecrafter_20.svg#MineCrafter-2.0') format('svg');
+}
+
+.fontpro,.fontpro-26883 {
+  font-family: 'MineCrafter-2.0',sans-serif;
+}
+/**
+ * Body Styling
+ */
+
+body {
+    background-image: url("images/background.jpg");
+}
+
+/**
+ * Header Styling
+ */
+ 
+.header {
+	text-align: center;
+	color:white;
+	font-size:24px;
+	
+}
+/**
+ * Main Body Styles
+ */
+ #holder {
+     margin: 0 auto;
+	 margin-top:330px;
+     width: 900px; 	
+	 
+ }
+    .container{
+        width: 150px;
+        margin-left: 30px;
+        float: left;
+		margin-right:30px;
+    }
+    img{
+        width: 150px;
+        height:150px;
+        float: center;
+		
+    }
+    .text{
+        text-align:center;
+		color:white;
+		font-family: 'MineCrafter-2.0',sans-serif;
+		background-color:black;
+		opacity:0.8;
+		height:25px;		   
+    }
+	
+
+/**
+ * Footer Styles
+ */
+ 
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 1px;
+	left: 4px;
+	background-color: #9B9B9B;
+	margin-left:40%;
+	margin-right:40%;
+	opacity: 0.8;
+	text-align: center;
+	padding: 2px;
+			font-family: 'MineCrafter-2.0',sans-serif;
+			font-size:10px;
+}

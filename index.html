@@ -1,0 +1,113 @@
+<!doctype html>
+<!--
+     Author: Jordan Thirkle // DevilEskimo
+     Author URL: https://jordanthirkle.co.uk
+-->
+<html>
+<head>
+        <!-- Title -->
+        <title>Portal 1.1</title>
+        
+        <!--Meta -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jordan Thirkle">
+        
+        <!-- Links -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+       <link rel="stylesheet" type="text/css" href="css/imagehover.css">
+       
+       
+</head>
+
+<body>
+
+    <!--Header Section-->
+    <div class="holder">
+    <div class="header">
+<h1 class="fontpro fadeInDownBig">ServerName</h1>
+    </div>
+    <!--Header Section END-->
+    
+            <!--Server IP Address-->
+            <script>/*
+    Copy text from any appropriate field to the clipboard
+  By Craig Buckler, @craigbuckler
+  use it, abuse it, do whatever you like with it!
+*/
+(function() {
+
+    'use strict';
+  
+  // click events
+  document.body.addEventListener('click', copy, true);
+
+    // event handler
+    function copy(e) {
+
+    // find target element
+    var 
+      t = e.target,
+      c = t.dataset.copytarget,
+      inp = (c ? document.querySelector(c) : null);
+      
+    // is element selectable?
+    if (inp && inp.select) {
+      
+      // select text
+      inp.select();
+
+      try {
+        // copy text
+        document.execCommand('copy');
+        inp.blur();
+        
+        // copied animation
+        t.classList.add('copied');
+        setTimeout(function() { t.classList.remove('copied'); }, 1500);
+      }
+      catch (err) {
+        alert('please press Ctrl/Cmd+C to copy');
+      }
+      
+    }
+    
+    }
+
+})();</script>
+        <div class="ip-address">   <center>
+  <label for="website">Server IP:</label>
+<input type="text" id="website" value="mc.serveriphere.org" />
+<button data-copytarget="#website">copy</button>
+</center>
+
+    <!-- Icons, links and text for the buttons etc. -->
+      <div class="container hoverable">
+          <div class="img"><a href="#"><img src="images/home.png" alt="home" /></a></div>
+            <div class="text">Home</div>
+      </div>
+    
+    <div class="container hoverable">
+        <div class="img"><a href="#"><img src="images/forums.png" alt="forums" /></a></div>
+        <div class="text">Forums</div>
+    </div>
+    
+    <div class="container hoverable">
+        <div class="img"><a href="#"><img src="images/store.png" alt="store" /></a></div>
+        <div class="text">Store</div>
+    </div>
+    
+    <div class="container hoverable">
+        <div class="img"><a href="#"><img src="images/about.png" alt="about" /></a></div>
+        <div class="text">About</div>
+    </div>
+ </div>
+ </div>
+    <!-- Link Section END -->   
+    </body>
+    
+</html>

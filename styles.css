@@ -1,0 +1,220 @@
+/* CSS Document */
+
+
+/**
+ * HTML Styling
+ */
+ 
+html {
+	height:100px;
+}
+*
+{
+   margin-top: 0;
+   margin-right: 0;
+   margin-bottom: 0;
+   margin-left: 0;
+   padding-top: 0;
+   padding-right: 0;
+   padding-bottom: 0;
+   padding-left: 0;
+}
+/**
+* FONT FACE
+*/
+@font-face {
+  font-family: 'MineCrafter-2.0';
+  src: url('fonts/minecrafter_20.eot');
+  src: url('fonts/minecrafter_20.eot?#iefix') format('embedded-opentype'),
+       url('fonts/minecrafter_20.woff') format('woff'),
+       url('fonts/minecrafter_20.ttf') format('truetype'),
+       url('fonts/minecrafter_20.svg#MineCrafter-2.0') format('svg');
+}
+
+.fontpro,.fontpro-26883 {
+  font-family: 'MineCrafter-2.0',sans-serif;
+
+
+}
+/**
+ * Body Styling
+ */
+
+body {
+    background-image: url("images/background.jpg");
+}
+
+/**
+ * Header Styling
+ */
+ 
+.header {
+	text-align: center;
+	color:white;
+	font-size:25px;
+
+	
+}
+/**
+ * Main Body Styles
+ */
+ .holder {
+     margin: 0 auto;
+	 margin-top:300px;
+     width: 900px;
+	
+ }
+    .container{
+	
+        width: 150px;
+        margin-left: 30px;
+        float: left;
+		margin-right:30px;
+    }
+    img{
+        width: 150px;
+        height:150px;
+        float: center;
+		
+    }
+    .text{
+        text-align:center;
+		color:white;
+		font-family: 'MineCrafter-2.0',sans-serif;
+		background-color:black;
+		opacity:0.8;
+		font-size:16px;
+		height:25px;	
+		padding:5px;	
+		     margin: 0 auto;
+    }
+	
+
+/**
+ * Footer Styles
+ */
+ 
+.footer {
+	text-align: center;
+	font-family: 'MineCrafter-2.0',sans-serif;
+	font-size:14px;
+			     margin: 0 auto;
+	color:white;
+
+	
+}
+
+/**
+ * Hoverable Image
+ */
+        .hoverable img{
+            -webkit-transition: all .4s ease;
+            -moz-transition: all .4s ease;
+            -o-transition: all .4s ease;
+            transition: all .4s ease;
+        }
+        .hoverable img:hover{
+            transform: translate(0,-20px) scale(1.1,1.1);
+        }
+                    .logo{
+                animation-name: pulse_animation;
+            	animation-duration: 5000ms;
+            	animation-iteration-count: infinite;
+            	animation-timing-function: ease;
+            }
+            @keyframes pulse_animation {
+            	0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+            	100% { transform: scale(1); }
+            }
+                .logo-height{
+            height: 30vh;
+            width: auto;
+        }
+        .wow {
+           visibility: visible;
+        }
+		
+/**
+ * Server IP
+ */
+ .ip-address {
+		text-align:center;
+			font-family: 'MineCrafter-2.0',sans-serif;
+			padding:1px;
+			color:white
+ }
+ 
+.ip-address span{
+
+	background: rgba(255,255,255,.7);
+	padding: 15px;
+}
+	 
+label {
+  clear: both;
+ 
+  font-size: 0.85em;
+  font-weight: bold;
+  padding: 0.8em 0 0.2em 0;
+  user-select: none;
+}
+
+input, button {
+ 
+  font-size: 1em;
+  padding: 3px 6px;
+  margin: 0;
+  border: 1px solid #333;
+  outline: 0;
+  box-shadow: none;
+}
+
+::-moz-focus-inner { 
+  padding: 0;
+  border: 0;
+}
+
+input {
+  width: 15em;
+  background-color: #fff;
+  border-right: 0 none;
+  border-radius: 3px 0 0 3px;
+}
+
+button {
+  position: relative;
+  background-color: #aaa;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.copied::after {
+  position: absolute;
+  top: 12%;
+  right: 110%;
+  display: block;
+  content: "copied";
+  font-size: 0.75em;
+  padding: 2px 3px;
+  color: #fff;
+  background-color: #22a;
+  border-radius: 3px;
+  opacity: 0;
+  will-change: opacity, transform;
+  animation: showcopied 1.5s ease;
+}
+
+@keyframes showcopied {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
